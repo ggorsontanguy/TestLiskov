@@ -1,1 +1,1 @@
-Ce projet est juste un Kata perso:x
+Projet pour tester GitHub et le principe de Liskov
