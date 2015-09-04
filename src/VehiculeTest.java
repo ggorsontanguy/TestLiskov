@@ -23,12 +23,12 @@ public class VehiculeTest {
 		Color color = Color.BLEU;
 		Vehicule vehicule = new VehiculeBiColor(color, Color.ROUGE);
 		assertSame(color, vehicule.roue.color);
-		assertSame(color, vehicule.carroserie.color);
+		assertNotSame(color, vehicule.carroserie.color);
 		
 		color = Color.ROUGE;
 		vehicule = new VehiculeBiColor(color, Color.BLEU);
 		assertSame(color, vehicule.roue.color);
-		assertSame(color, vehicule.carroserie.color);
+		assertNotSame(color, vehicule.carroserie.color);
 	}
 
 }
